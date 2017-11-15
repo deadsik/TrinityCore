@@ -4,7 +4,7 @@ MAINTAINER admin <evgeniy@kolesnyk.ru>
 RUN export DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
 RUN apt-get upgrade -y
-RUN apt-get install build-essential autoconf libtool gcc g++ make git-core wget p7zip-full libncurses5-dev zlib1g-dev libbz2-dev openssl libssl-dev libreadline6-dev libboost-dev libboost-thread-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-iostreams-dev screen libzmq-dev libmysqlclient-dev libmysql++-dev screen curl apache2 php5 php5-mysql -y
+RUN apt-get install build-essential autoconf libtool gcc g++ make git-core wget p7zip-full libncurses5-dev zlib1g-dev libbz2-dev openssl libssl-dev libreadline6-dev libboost-dev libboost-thread-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-iostreams-dev screen libzmq-dev libmysqlclient-dev libmysql++-dev screen curl apache2 php5 php5-mysql net-tools -y
 
 RUN curl -o /root/cmake-3.9.4.tar.gz https://cmake.org/files/v3.9/cmake-3.9.4.tar.gz
 RUN cd /root && tar xzf cmake-3.9.4.tar.gz
